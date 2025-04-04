@@ -14,19 +14,24 @@
     <style>
         body {
             background-color: #FFC300; /* Fondo amarillo Caterpillar */
-            color: #e0e0e0; /* Texto gris claro */
+            color: #333333; /* Texto gris oscuro (casi negro) para mejor contraste */
             font-family: 'Arial', sans-serif; /* Tipografía principal */
         }
 
         h1, h2 {
-            color: #f8f9fa; /* Encabezados en blanco suave */
+            color: #212529; /* Encabezados en gris muy oscuro (casi negro) */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sutil sombra para mejor legibilidad */
+        }
+
+        p {
+            color: #495057; /* Párrafos en gris oscuro */
         }
 
         .carousel-item img {
             height: 500px; /* Altura fija para las imágenes del carrusel */
             object-fit: contain; /* Mantiene proporción de las imágenes */
             background-color: #FFC300; /* Fondo amarillo si la imagen no llena el espacio */
-            border: 4px solid gray; /* Borde gris agregado */
+            border: 4px solid #808080; /* Borde gris (#808080 es el código hexadecimal para gris) */
         }
 
         .footer {
@@ -39,6 +44,7 @@
 
         .footer p {
             margin: 5px 0; /* Espaciado entre párrafos del footer */
+            color: #000; /* Texto negro en el footer */
         }
 
         .container {
@@ -107,7 +113,7 @@
     
     <!-- Pie de página -->
     <footer class="footer mt-5">
-        <!-- Nombre cambiado de Tony a Nicolas Robledo -->
+        <!-- Nombre cambiado a Nicolas Robledo -->
         <p>&copy; Nicolas Robledo 2025 Presentadores de series - Todos los derechos reservados</p>
         <p>Fuente: 
             <a href="https://www.primevideo.com/" target="_blank" style="color: #000; text-decoration: none;">
