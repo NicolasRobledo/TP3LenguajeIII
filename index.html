@@ -27,10 +27,17 @@
             color: #495057; /* Párrafos en gris oscuro */
         }
 
+        /* Nuevo estilo agregado para el fondo gris del carrusel */
+        .carousel {
+            background-color: #808080; /* Fondo gris para el área alrededor de las imágenes */
+            padding: 10px; /* Espacio alrededor del carrusel */
+            border-radius: 8px; /* Bordes redondeados para mejor estética */
+        }
+
         .carousel-item img {
             height: 500px; /* Altura fija para las imágenes del carrusel */
             object-fit: contain; /* Mantiene proporción de las imágenes */
-            background-color: #FFC300; /* Fondo amarillo si la imagen no llena el espacio */
+            background-color: #808080; /* Cambiado a gris (#808080) el fondo detrás de las imágenes */
             border: 4px solid #808080; /* Borde gris (#808080 es el código hexadecimal para gris) */
         }
 
@@ -70,7 +77,7 @@
     <header class="container text-center mt-4">
         <h1>La Casa De Los Dibujos - 2004 ‧ Reality ‧ 3 temporadas</h1>
         
-        <!-- Carrusel de imágenes -->
+        <!-- Carrusel de imágenes con fondo gris -->
         <div id="mandalorianCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!-- Imagen activa por defecto -->
