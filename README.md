@@ -1,7 +1,7 @@
 # TP2 - LENGUAJES III. CARRUSEL CON FRAMEWORKS
-Alumno: YURQUINA RUBEN ANTONIO
+Alumno: Robledo Urdininea Gustavo Nicolas
 Carrera: Ing. Informatica
 FrameWork:BOOSTRAP
 
 
-Link:  https://anatolysweb.github.io/MostradorSeries_TP3LenguajeIII/
+Link:  https://nicolasrobledo.github.io/TP3LenguajeIII/
