@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Casa De Los Dibujos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+        }
+        h1, h2 {
+            color: #f8f9fa;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: contain;
+            background-color: black;
+        }
+        .footer {
+            background-color: #181818;
+            padding: 20px;
+            text-align: center;
+            color: #bdbdbd;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .container {
+            max-width: 900px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .video-container iframe {
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="container text-center mt-4">
+        <h1>La Casa De Los Dibujos - 2004 ‧ Reality ‧ 3 temporadas</h1>
+        <div id="mandalorianCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ImagenesCarrusel/imagen01.jpg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="ImagenesCarrusel/imagen02.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="ImagenesCarrusel/imagen03.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mandalorianCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mandalorianCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+    
+    <main class="container mt-5 text-center">
+        <h2>Bienvenido a la Casa de los Dibujos</h2>
+        <p>🎬 Un reality show animado lleno de caos, sátira y humor irreverente.</p>
+        <p>Ocho personajes animados conviven en una casa, creando situaciones absurdas y críticas a la cultura pop. Si te gusta el humor negro y lo políticamente incorrecto, este es tu show. 💥</p>
+        <p>🔥 ¡Prepárate para lo inesperado! 🔥</p>
+    
+        <div class="video-container mt-4">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/ID_DEL_VIDEO_1" frameborder="0" allowfullscreen></iframe>
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/ID_DEL_VIDEO_2" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </main>
+    
+    <footer class="footer mt-5">
+        <p>&copy; Tony_2025 Presentadores de series - Todos los derechos reservados</p>
+        <p>Fuente: <a href="https://www.primevideo.com/" target="_blank" style="color: #bdbdbd; text-decoration: none;">Prime Video</a></p>
+    </footer>
+</body>
+</html>
