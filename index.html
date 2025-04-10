@@ -26,6 +26,7 @@
         h1 {
           animation: slideIn 1.2s ease-out;
         }
+<<<<<<< HEAD
         @keyframes slideIn {
           from {
             opacity: 0;
@@ -50,6 +51,14 @@
           object-fit: contain;
           background-color: black;
           transition: transform 0.5s ease;
+=======
+
+        .carousel-item img {
+            height: 500px; /* Altura fija para las imágenes del carrusel */
+            object-fit: contain; /* Mantiene proporción de las imágenes */
+            background-color: #FFC300; /* Fondo amarillo si la imagen no llena el espacio */
+            border: 4px solid #808080; /* Borde gris (#808080 es el código hexadecimal para gris) */
+>>>>>>> parent of 13f1a13 (correccion de fondo de imagenes del carrusel)
         }
         .carousel-item:hover img {
           transform: scale(1.02);
@@ -111,7 +120,7 @@
     <header class="container text-center mt-4">
         <h1>La Casa De Los Dibujos - 2004 ‧ Reality ‧ 3 temporadas</h1>
         
-        <!-- Carrusel de imágenes con fondo gris -->
+        <!-- Carrusel de imágenes -->
         <div id="mandalorianCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!-- Imagen activa por defecto -->
