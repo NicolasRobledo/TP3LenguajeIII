@@ -12,64 +12,98 @@
     
     <!-- Estilos personalizados -->
     <style>
+        html {
+          scroll-behavior: smooth;
+        }
         body {
-            background-color: #FFC300; /* Fondo amarillo Caterpillar */
-            color: #333333; /* Texto gris oscuro (casi negro) para mejor contraste */
-            font-family: 'Arial', sans-serif; /* Tipografía principal */
+          background-color: #121212;
+          color: #e0e0e0;
+          font-family: 'Poppins', sans-serif;
         }
-
-        h1, h2 {
-            color: #212529; /* Encabezados en gris muy oscuro (casi negro) */
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sutil sombra para mejor legibilidad */
+        h1, h2, h3 {
+          color: #f8f9fa;
         }
-
-        p {
-            color: #495057; /* Párrafos en gris oscuro */
+        h1 {
+          animation: slideIn 1.2s ease-out;
         }
-
-        /* Nuevo estilo agregado para el fondo gris del carrusel */
-        .carousel {
-            background-color: #808080; /* Fondo gris para el área alrededor de las imágenes */
-            padding: 10px; /* Espacio alrededor del carrusel */
-            border-radius: 8px; /* Bordes redondeados para mejor estética */
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateY(-30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
-
+        .navbar {
+          background-color: #1f1f1f;
+        }
+        .navbar-brand, .nav-link {
+          color: #e0e0e0 !important;
+        }
+        .nav-link:hover {
+          color: #90caf9 !important;
+        }
         .carousel-item img {
-            height: 500px; /* Altura fija para las imágenes del carrusel */
-            object-fit: contain; /* Mantiene proporción de las imágenes */
-            background-color: #808080; /* Cambiado a gris (#808080) el fondo detrás de las imágenes */
-            border: 4px solid #808080; /* Borde gris (#808080 es el código hexadecimal para gris) */
+          height: 500px;
+          object-fit: contain;
+          background-color: black;
+          transition: transform 0.5s ease;
         }
-
-        .footer {
-            background-color: #FFC300; /* Fondo del pie de página */
-            padding: 20px;
-            text-align: center;
-            color: #000; /* Texto negro para contraste */
-            font-size: 14px;
+        .carousel-item:hover img {
+          transform: scale(1.02);
         }
-
-        .footer p {
-            margin: 5px 0; /* Espaciado entre párrafos del footer */
-            color: #000; /* Texto negro en el footer */
+        .info-card {
+          background-color: #1e1e1e;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 0 20px rgba(255,255,255,0.05);
+          padding: 25px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          height: 100%;
         }
-
-        .container {
-            max-width: 900px; /* Limita el ancho del contenido */
+        .info-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 0 25px rgba(255,255,255,0.1);
         }
-
         .video-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap; /* Permite que los videos se acomoden en varias filas */
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
         }
-
         .video-container iframe {
-            border-radius: 10px; /* Bordes redondeados a los videos */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar los videos */
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+          width: 100%;
+          max-width: 400px;
         }
-    </style>
+        .footer {
+          background-color: #181818;
+          padding: 20px;
+          text-align: center;
+          color: #bdbdbd;
+          font-size: 14px;
+        }
+        a {
+          color: #90caf9;
+        }
+        .contacto-form {
+          background-color: #1f1f1f;
+          border-radius: 15px;
+          padding: 30px;
+          box-shadow: 0 0 15px rgba(255,255,255,0.05);
+        }
+        .btn-custom {
+          background-color: #90caf9;
+          color: #121212;
+          font-weight: bold;
+        }
+        .btn-custom:hover {
+          background-color: #64b5f6;
+        }
+      </style>
 </head>
 <body>
 
